@@ -1,0 +1,19 @@
+@import "~components/Icon/mixin.scss";
+
+.calendar {
+
+  border: 1px solid rgba(16, 22, 26, 0.1);
+
+  &.disabled {
+    button#right,
+    button#left,
+    [data-react-toolbox='month'] > span:first-child {
+      pointer-events: none;
+      opacity: 0.3;
+    }
+  }
+}
+
+tr {
+  display : inline-flex;
+}
